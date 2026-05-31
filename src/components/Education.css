@@ -1,0 +1,51 @@
+.education-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  max-width: 680px;
+  transition: border-color 0.2s;
+}
+.education-card:hover { border-color: var(--border2); }
+
+.edu-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: var(--accent-dim);
+  border: 1px solid rgba(79, 156, 249, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.edu-degree {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+
+.edu-school {
+  font-size: 0.875rem;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.edu-desc {
+  font-size: 0.825rem;
+  color: var(--text3);
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 700px) {
+  .education-card { flex-direction: column; padding: 28px 24px; }
+}

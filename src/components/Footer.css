@@ -1,0 +1,28 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 28px clamp(20px, 8vw, 120px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: var(--text3);
+  font-family: var(--font-mono);
+}
+.footer-copy span { color: var(--accent); }
+
+.footer-right {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text3);
+}
+
+@media (max-width: 480px) {
+  .footer { justify-content: center; text-align: center; }
+}
